@@ -84,7 +84,7 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 23);
             this.button3.TabIndex = 26;
-            this.button3.Text = "Load";
+            this.button3.Text = "ZAŁADUJ";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -94,7 +94,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 23);
             this.button4.TabIndex = 27;
-            this.button4.Text = "Save";
+            this.button4.Text = "ZAPISZ";
             this.button4.UseVisualStyleBackColor = true;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -130,7 +130,7 @@
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(823, 407);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Recognition";
+            this.tabPage1.Text = "ROZPOZNAWANIE";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button1
@@ -139,7 +139,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(119, 23);
             this.button1.TabIndex = 22;
-            this.button1.Text = "Clear";
+            this.button1.Text = "WYCZYŚĆ POLE";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -148,9 +148,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(14, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(88, 13);
+            this.label1.Size = new System.Drawing.Size(95, 13);
             this.label1.TabIndex = 21;
-            this.label1.Text = "Draw digit below:";
+            this.label1.Text = "Narysuj tutaj liczbę";
             // 
             // button2
             // 
@@ -158,7 +158,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(119, 23);
             this.button2.TabIndex = 23;
-            this.button2.Text = "Recon";
+            this.button2.Text = "ROZPOZNAJ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

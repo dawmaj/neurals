@@ -24,7 +24,7 @@ namespace HAKGERSoft.Synapse.Samples {
         }
 
         private void Form1_Load(object sender,EventArgs e) {
-            this.Text = "Neural networks";
+            this.Text = "Sieć neuronowa";
             BuildNetwork();
             ClearUserInput();
         }
@@ -75,7 +75,7 @@ namespace HAKGERSoft.Synapse.Samples {
         private void button2_Click(object sender,EventArgs e) {
             //recon
             if(!Loaded)
-                MessageBox.Show("Load the Network first!","Warning");
+                MessageBox.Show("Załaduj sieć neuronową!","Warning");
             double[] input=null;
             using(Bitmap cropped=Digitalizer.AutoCrop(UserBitmap)) {
                 using(Bitmap sized=Digitalizer.Resize(cropped,17,20)) {
@@ -94,7 +94,7 @@ namespace HAKGERSoft.Synapse.Samples {
         void DrawReconResults(double[] output){
             int idx=0;
             Tuple<int,double>[] sorted=output.Select(x => new Tuple<int,double>(idx++,x)).OrderByDescending(x => x.Item2).ToArray();
-            label2.Text="Recognized as: "+sorted[0].Item1.ToString();
+            label2.Text="Jest to liczba: "+sorted[0].Item1.ToString();
 
             foreach(var tuple in sorted) {
                 int index=tuple.Item1;
