@@ -153,8 +153,6 @@ namespace HAKGERSoft.Synapse.Samples {
 
         void StartLearning(){
             Stopped=false;
-            button5.Text="Stop";
-            Log.Clear();
             Thread.CurrentThread.Priority=ThreadPriority.Lowest;
             Image[] bigimgs=Utility.Generate(i => Image.FromFile(@"mnist_train"+i.ToString()+".jpg"),10).ToArray();
 
@@ -164,7 +162,6 @@ namespace HAKGERSoft.Synapse.Samples {
                 if(Stopped)
                     return;
                 double[] output=Digitalizer.GetOutput(10,idx).ToArray();
-                DrawDigitalized(input,LearnDigitBox);
                 Application.DoEvents();
                 trainingList.Add(new TrainingData(input,output));
                 GC.Collect();
@@ -176,7 +173,6 @@ namespace HAKGERSoft.Synapse.Samples {
                     BPResponse response= Network.BP(request);
                     double eps=response.Epochs[0].Epsilon;
                     double ms=response.BPTime.TotalMilliseconds;
-                    Log.Text+=string.Format("Process cycle {0}, error={1}, time[ms]={2}\r\n",total.ToString(),eps.ToString("0.000"),ms.ToString("0.000"));
                     trainingList.Clear();
                 }
             }
@@ -185,7 +181,6 @@ namespace HAKGERSoft.Synapse.Samples {
 
         void StopLearning(){
             Stopped=true;
-            button5.Text="Start";
         }
 
         static IEnumerable<double[]> GetAllImages(Image[] bigs) {

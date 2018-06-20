@@ -52,10 +52,6 @@
             this.OutputGraph8 = new System.Windows.Forms.PictureBox();
             this.OutputGraph9 = new System.Windows.Forms.PictureBox();
             this.Tabs = new System.Windows.Forms.TabControl();
-            this.button5 = new System.Windows.Forms.Button();
-            this.LearnDigitBox = new System.Windows.Forms.PictureBox();
-            this.Log = new System.Windows.Forms.TextBox();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UserPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OutputBox0)).BeginInit();
@@ -79,8 +75,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OutputGraph8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.OutputGraph9)).BeginInit();
             this.Tabs.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.LearnDigitBox)).BeginInit();
-            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // button3
@@ -381,55 +375,11 @@
             // Tabs
             // 
             this.Tabs.Controls.Add(this.tabPage1);
-            this.Tabs.Controls.Add(this.tabPage2);
             this.Tabs.Location = new System.Drawing.Point(12, 12);
             this.Tabs.Name = "Tabs";
             this.Tabs.SelectedIndex = 0;
             this.Tabs.Size = new System.Drawing.Size(831, 433);
             this.Tabs.TabIndex = 24;
-            // 
-            // button5
-            // 
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(6, 16);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(119, 23);
-            this.button5.TabIndex = 28;
-            this.button5.Text = "Start";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // LearnDigitBox
-            // 
-            this.LearnDigitBox.BackColor = System.Drawing.Color.White;
-            this.LearnDigitBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.LearnDigitBox.Location = new System.Drawing.Point(96, 45);
-            this.LearnDigitBox.Name = "LearnDigitBox";
-            this.LearnDigitBox.Size = new System.Drawing.Size(29, 29);
-            this.LearnDigitBox.TabIndex = 29;
-            this.LearnDigitBox.TabStop = false;
-            // 
-            // Log
-            // 
-            this.Log.Location = new System.Drawing.Point(131, 19);
-            this.Log.Multiline = true;
-            this.Log.Name = "Log";
-            this.Log.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Log.Size = new System.Drawing.Size(678, 369);
-            this.Log.TabIndex = 30;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.Log);
-            this.tabPage2.Controls.Add(this.LearnDigitBox);
-            this.tabPage2.Controls.Add(this.button5);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(823, 407);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Learning";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -469,9 +419,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.OutputGraph8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.OutputGraph9)).EndInit();
             this.Tabs.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.LearnDigitBox)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -507,10 +454,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TabControl Tabs;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TextBox Log;
-        private System.Windows.Forms.PictureBox LearnDigitBox;
-        private System.Windows.Forms.Button button5;
     }
 }
 
